@@ -716,6 +716,11 @@ input[type="text"],
 	font-size: 20px;
 	line-height: 24px;
 }
-
+.header-tittle{
+	font-size: 36px;
+}
+.header-content{
+	padding-top: 30px;
+}
 }
 
