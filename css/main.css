@@ -713,8 +713,8 @@ input[type="text"],
 
 @media (max-width: 400px){
 .header-text{
-	font-size: 20px;
-	line-height: 24px;
+	font-size: 24px;
+	line-height: 30px;
 }
 .header-tittle{
 	font-size: 36px;
