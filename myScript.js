@@ -40,7 +40,7 @@ $(".news-content").dotdotdot();
 $(".news-wrapper").hover(function(){
 	$(this).css("height", "280");
 	$(this).find(".news-content").toggleClass("news-content--full");
-	$(this).find(".news-content").dotdotdot();
+  $(this).find(".news-content").dotdotdot();
   $(this).find("a").css("display", "block");
      }, function(){
     $(this).find(".news-content").toggleClass("news-content--full");

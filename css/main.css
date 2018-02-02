@@ -136,6 +136,7 @@ button{
 .header-bottom{
 	height: 700px;
 	position: relative;
+	margin-top: -2px;
 }
 
 .header-img{
@@ -311,6 +312,9 @@ button{
 	padding-bottom: 20px;
 	padding-left: 20px;
 	padding-right: 20px;
+	-webkit-transition: height 0.5s;
+	-o-transition: height 0.5s;
+	transition: height 0.5s;
 }
 
 .news-wrapper a{
@@ -602,10 +606,6 @@ footer .link-btn{
 .sub-nav::before
 {
 	display: none;
-}
-
-.header-bottom{
-	margin-top: -1px;
 }
 
 .container{
