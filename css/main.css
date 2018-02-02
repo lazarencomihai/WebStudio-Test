@@ -166,8 +166,8 @@ button{
 	bottom: 90px;
 	left:50%;
 	height: 10px;
-	width: 12.5%;
-	margin-left: -6.25%;
+	width: 100px;
+	margin-left: -50px;
 	text-align: center;
 	z-index: 999;
 }
