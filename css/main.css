@@ -3,7 +3,8 @@ body{
 	margin: 0;
 	font-family: 'Titillium Web', sans-serif;
 	font-weight: 400;
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 }
 
 a{
@@ -25,8 +26,12 @@ button{
 }
 
 .header-top-wrapper{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	padding: 20px 5px;
 }
 .main-nav{
@@ -67,8 +72,11 @@ button{
 .main-nav ul{
 	margin: 0;
 	padding: 0;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 	list-style: none;
 	margin-left: 22px; 
 }
@@ -99,7 +107,11 @@ button{
 	color: white;
 	text-transform: uppercase;
 	cursor: pointer;
-	box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.25);
+	-webkit-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.25);
+	        box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.25);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#1fa336), to(#3dc054));
+  background-image: -webkit-linear-gradient(bottom, #1fa336 0%, #3dc054 100%);
+  background-image: -o-linear-gradient(bottom, #1fa336 0%, #3dc054 100%);
   background-image: linear-gradient(to top, #1fa336 0%, #3dc054 100%);
   text-decoration: none;
 }
@@ -192,6 +204,8 @@ button{
 	left: 0;
 	width: 100%;
 	height: 100%;
+	-webkit-transition: ease-in 1.5s;
+	-o-transition: ease-in 1.5s;
 	transition: ease-in 1.5s;
 	opacity: 0;
 	visibility: hidden;	
@@ -229,9 +243,14 @@ button{
 }
 
 .main-news{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 }
 
 .news-item{
@@ -317,9 +336,14 @@ button{
 }
 
 .contact-flex{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 }
 
 .main-input
@@ -348,6 +372,8 @@ button{
 }
 
 .footer-nav__items{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 
@@ -392,9 +418,14 @@ button{
 }
 
 .footer-flex{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 }
 .subscribe{
 	width: 49%;
@@ -411,9 +442,14 @@ button{
 	color: white;
 }
 .subscribe-form{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 }
 
 .email-input{
@@ -428,8 +464,13 @@ button{
 	margin: 0;
 	margin-top: 2px;
 	padding: 0;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 	text-transform: none;
 	min-width: 260px;
 	padding: 0 20px;
@@ -467,7 +508,8 @@ button{
   border: 0;
   padding: 0;
   white-space: nowrap;
-  clip-path: inset(100%);
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -528,7 +570,8 @@ input{
 }
 
 .contact-flex{
-	justify-content: space-around;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
 }
 footer .link-btn{
 	display: block;
@@ -536,13 +579,15 @@ footer .link-btn{
 	margin-top: 10px;
 }
 .main-news{
-	justify-content: space-around;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
 }
 .news-item{
 	width: 38%;
 }
 .footer-flex{
-	justify-content: space-around;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
 }
 .footer-nav__items ul:nth-child(2){
 	margin-right: 10px;
@@ -681,7 +726,8 @@ input[type="text"],
   width: 36px;
   height: 2px;
   background-color: #fff;
-  box-shadow: 0 8px 0 0 #fff, 0 16px 0 0 #fff;
+  -webkit-box-shadow: 0 8px 0 0 #fff, 0 16px 0 0 #fff;
+          box-shadow: 0 8px 0 0 #fff, 0 16px 0 0 #fff;
 }
 
 .main-nav--opened .main-nav__toggle::before {
@@ -723,4 +769,3 @@ input[type="text"],
 	padding-top: 50px;
 }
 }
-
